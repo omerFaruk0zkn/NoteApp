@@ -31,3 +31,27 @@ cd note-app-client
 npm install
 npm start
 ```
+## Açıklamalar
+Bu içerikleri appsettings.json dosyasına ekleyin.
+### 1. ConnectionStrings
+- MSSQL bağlanma dizesini **"DefaultConnection"** adıyla ekleyin.
+- Örnek bağlantı dizesi:
+  ```json
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=DATABASE_NAME;Trusted_Connection=True;TrustServerCertificate=True;"
+  }
+  ```
+### 2. Jwt
+- Key: Uygulamanın JWT (JSON Web Token) oluşturmak için kullandığı gizli anahtardır. Bu değeri güvenli tutmalısınız. Bu nedenle kendinize özel bir anahtar oluşturabilirsiniz.
+  - Not: En az 32 karakter uzunluğunda olmalı.
+- Issuer ve Audience: Uygulamanın kimlik doğrulama ve yetkilendirme sırasında kullandığı bilgiler.
+  - İsterseniz özelleştirebilirsiniz
+- Örnek içerik: 
+  ```json
+    "Jwt": {
+    "Key": "YOUR_SECRET_KEY",
+    "Issuer": "NoteAppAPI",
+    "Audience": "NoteAppAPI"
+  }
+  ```
+     
