@@ -1,16 +1,31 @@
-# Node.js
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# React
+note-app-client/node_modules/
+note-app-client/npm-debug.log*
+note-app-client/yarn-debug.log*
+note-app-client/yarn-error.log*
+
+note-app-client/.pnp
+note-app-client/.pnp.js
+
+# testing
+note-app-client/coverage/
+
+# production
+note-app-client/build/
+
+# misc
+note-app-client/.DS_Store
+note-app-client/.env.local
+note-app-client/.env.development.local
+note-app-client/.env.test.local
+note-app-client/.env.production.local
 
 # Visual Studio
-.vscode/
+note-app-client/.vscode/
 
 # ASP.NET
-.vs/
-Properties/
-appsettings.json
-appsettings.Development.json
-bin/
-obj/
+NoteAppAPI/.vs/
+NoteAppAPI/appsettings.json
+NoteAppAPI/appsettings.Development.json
+NoteAppAPI/bin/
+NoteAppAPI/obj/
