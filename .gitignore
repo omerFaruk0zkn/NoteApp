@@ -8,5 +8,9 @@ yarn-error.log*
 .vscode/
 
 # ASP.NET
+.vs/
+Properties/
+appsettings.json
+appsettings.Development.json
 bin/
 obj/
