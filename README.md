@@ -24,9 +24,10 @@ Basit bir not tutma uygulaması. Kullanıcıların notlarını kaydedebileceği,
 cd NoteAppAPI
 dotnet restore
 dotnet run
-
+```     
 ### Frontend
 ```bash
 cd note-app-client
 npm install
 npm start
+```
