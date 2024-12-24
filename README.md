@@ -16,7 +16,7 @@ Basit bir not tutma uygulaması. Kullanıcıların notlarını kaydedebileceği,
 ## Teknolojiler
 - **Backend:** ASP.NET Web API
 - **Frontend:** React
-- **Veritabanı:** MSSQL
+- **Veritabanı:** PostgreSQL
 
 ## Kurulum
 ### Backend 
@@ -34,11 +34,11 @@ npm start
 ## Açıklamalar
 Bu içerikleri appsettings.json dosyasına ekleyin.
 ### 1. ConnectionStrings
-- MSSQL bağlanma dizesini **"DefaultConnection"** adıyla ekleyin.
+- PostgreSQL bağlanma dizesini **"DefaultConnection"** adıyla ekleyin.
 - Örnek bağlantı dizesi:
   ```json
   "ConnectionStrings": {
-    "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=DATABASE_NAME;Trusted_Connection=True;TrustServerCertificate=True;"
+    "DefaultConnection": "Host=localhost;Port=<YOUR_PORT>;Database=<YOUR_DATABASE_NAME>;Username=<YOUR_USER_NAME>;Password=<YOUR_PASSWORD>;"
   }
   ```
 ### 2. Jwt
